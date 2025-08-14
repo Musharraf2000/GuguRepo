@@ -1,13 +1,16 @@
+const CACHE_NAME = 'gugu-v1';
+
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('v1').then(cache => {
+    caches.open(CACHE_NAME).then(cache => {
       return cache.addAll([
-          '/Gugu/',  // Update this path
-          '/Gugu/index.html',  // Update this path
-          '/Gugu/styles/styles.css',  // Update this path
-          '/Gugu/scripts/script.js',  // Update this path
-          '/Gugu/favicons/favicon-192x192.png',  // Update this path
-          '/Gugu/favicons/favicon-512x512.png'  // Update this path
+        './',                     // root (index.html)
+        './index.html',            // main page
+        './styles/styles.css',     // CSS
+        './scripts/script.js',     // JS
+        './favicons/android-icon-192x192.png', // favicons
+        './favicons/android-icon-512x512.png',
+        './favicons/manifest.json' // manifest
       ]);
     })
   );
