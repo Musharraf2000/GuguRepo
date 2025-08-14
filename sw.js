@@ -5,8 +5,9 @@ self.addEventListener('install', event => {
           '/Gugu/',  // Update this path
           '/Gugu/index.html',  // Update this path
           '/Gugu/styles/styles.css',  // Update this path
-          '/Gugu/images/favicon-192x192.png',  // Update this path
-          '/Gugu/images/favicon-512x512.png'  // Update this path
+          '/Gugu/scripts/script.js',  // Update this path
+          '/Gugu/favicons/favicon-192x192.png',  // Update this path
+          '/Gugu/favicons/favicon-512x512.png'  // Update this path
       ]);
     })
   );
