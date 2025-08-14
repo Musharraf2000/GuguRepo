@@ -4,7 +4,7 @@ self.addEventListener("install", event => {
         return cache.addAll([
           "/",
           "/index.html",
-          "/manifest.json",
+          "/images/manifest.json",
           "/images/android-icon-192x192.png" // Add your main icon here
         ]);
       })
